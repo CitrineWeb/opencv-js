@@ -8,7 +8,7 @@ TypeScript is supported (thanks to `mirada`).
 
 # Code Examples
 
-- See code examples (React, Angular) in [opencv-js-examples](https://github.com/TechStark/opencv-js-examples)
+- See code examples (React, Angular, Node.js) in [opencv-js-examples](https://github.com/TechStark/opencv-js-examples)
 
 # Live Demo
 
