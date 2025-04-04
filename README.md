@@ -6,6 +6,18 @@ The file `opencv.js` was downloaded from https://docs.opencv.org/4.10.0/opencv.j
 
 TypeScript is supported (thanks to `mirada`).
 
+# Basic Usage
+
+```js
+import cv from "@techstark/opencv-js";
+
+cv.onRuntimeInitialized = () => {
+  console.log("OpenCV.js is ready!");
+  // You can now use OpenCV functions here
+  console.log(cv.getBuildInformation());
+};
+```
+
 # Code Examples
 
 - See code examples (React, Angular, Node.js) in [opencv-js-examples](https://github.com/TechStark/opencv-js-examples)
