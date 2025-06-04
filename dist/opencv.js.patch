@@ -1,10 +1,10 @@
 diff --git a/dist/opencv.js b/dist/opencv.js
-index 1be6d42..9971ab6 100644
+index af4111b..3ba8a69 100644
 --- a/dist/opencv.js
 +++ b/dist/opencv.js
-@@ -42,7 +42,7 @@ if (typeof exports === 'object' && typeof module === 'object')
-       exports["cv"] = cv;
-     
+@@ -41,7 +41,7 @@ else if (typeof define === 'function' && define['amd'])
+   define([], () => cv);
+ 
    if (typeof Module === 'undefined')
 -    Module = {};
 +    var Module = {};
