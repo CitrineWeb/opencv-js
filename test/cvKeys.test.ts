@@ -1,6 +1,5 @@
 import path from "path";
 import fs from "fs";
-import * as ts from "typescript";
 import { setupOpenCv } from "./cv";
 
 beforeAll(setupOpenCv);
@@ -14,6 +13,7 @@ describe("CV keys", () => {
       }
     }
     // console.log(keys);
+    keys.sort((a, b) => a.localeCompare(b));
     return keys;
   }
 
