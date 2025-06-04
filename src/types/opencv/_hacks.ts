@@ -84,12 +84,12 @@ export declare class MinMaxLoc {
 export declare function exceptionFromPtr(err: number): any;
 export declare function onRuntimeInitialized(): any;
 export declare function FS_createDataFile(
-  arg0: string,
-  path: string,
+  parent: string,
+  name: string,
   data: Uint8Array,
-  arg3: boolean,
-  arg4: boolean,
-  arg5: boolean,
+  canRead: boolean,
+  canWrite: boolean,
+  canOwn: boolean,
 ): any;
 
 import { Algorithm, type LineTypes, Mat, type NormTypes, RotatedRect } from ".";
