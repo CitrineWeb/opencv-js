@@ -8,6 +8,21 @@ TypeScript is supported (thanks to `mirada`).
 
 # Basic Usage
 
+## >=4.11
+
+```js
+import cvReadyPromise from "@techstark/opencv-js";
+
+async function main() {
+  const cv = await cvReadyPromise;
+  console.log("OpenCV.js is ready!");
+  // You can now use OpenCV functions here
+  console.log(cv.getBuildInformation());
+}
+```
+
+## <=4.10
+
 ```js
 import cv from "@techstark/opencv-js";
 
