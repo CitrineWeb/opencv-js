@@ -1,8 +1,8 @@
 import "../src";
 
 export async function setupOpenCv() {
-  const _cv = require("../dist/opencv");
-  global.cv = await _cv;
+  const _cv = await require("../dist/opencv.js");
+  global.cv = _cv;
 }
 
 export function translateException(err: any) {
