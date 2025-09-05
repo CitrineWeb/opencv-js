@@ -139,4 +139,31 @@ describe("Mat", () => {
       throw translateException(err);
     }
   });
+
+  it("should test Mat.mat_clone() works with different Mat sizes and types", async () => {
+    try {
+      console.log("Testing Mat.mat_clone() with different types...");
+      
+      // Test with a 3x3 matrix of different type
+      const m1 = cv.Mat.ones(3, 3, cv.CV_32F);
+      const m2 = m1.mat_clone();
+      
+      // Verify dimensions and type are preserved
+      expect(m2.rows).toBe(m1.rows);
+      expect(m2.cols).toBe(m1.cols);
+      expect(m2.type()).toBe(m1.type());
+      
+      // Modify first element of m1
+      m1.data32F[0] = 42.5;
+      
+      // Check that m2 is not affected
+      expect(m1.data32F[0]).toBe(42.5);
+      expect(m2.data32F[0]).toBe(1.0); // Should remain original value
+      
+      m1.delete();
+      m2.delete();
+    } catch (err) {
+      throw translateException(err);
+    }
+  });
 });
