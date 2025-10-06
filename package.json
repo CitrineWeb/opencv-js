@@ -24,7 +24,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/TechStark/opencv-js.git"
+    "url": "git+https://github.com/CitrineWeb/opencv-js.git"
   },
   "keywords": [
     "opencv",
@@ -34,7 +34,7 @@
   "author": "Wilson",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/TechStark/opencv-js/issues"
+    "url": "https://github.com/CitrineWeb/opencv-js/issues"
   },
-  "homepage": "https://github.com/TechStark/opencv-js#readme"
+  "homepage": "https://github.com/CitrineWeb/opencv-js#readme"
 }
